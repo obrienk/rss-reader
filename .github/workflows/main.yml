@@ -7,13 +7,13 @@ jobs:
   mule-release:
     runs-on: ubuntu-latest
     steps:
-      - uses: git-for-windows/rss-to-issues@v0.0.6
+      - uses: git-for-windows/rss-to-issues@v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           feed: https://docs.mulesoft.com/releases.rss
           prefix: "[API Manager release]"
-          character-limit: 255
+          character-limit: 5000
           max-age: 7d
           labels: release
-          title-pattern: /API Manager.*/i
+          title-pattern: ^API Manager.*$
           #content-pattern: /^API Manager$/
