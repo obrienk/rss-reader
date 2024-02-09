@@ -14,7 +14,7 @@ jobs:
           prefix: "[API Manager release]"
           character-limit: 255
           dry-run: false
-          max-age: 48h
+          max-age: 72h
           labels: release
           title-pattern: /^API Manager$/
-          content-pattern: /^API Manager$/
+          #content-pattern: /^API Manager$/
