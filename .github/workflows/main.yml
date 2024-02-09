@@ -15,5 +15,5 @@ jobs:
           character-limit: 5000
           max-age: 3d
           labels: release
-          title-pattern: /^.*API Manager [0-9\.]*$/
+          title-pattern: ^.*API Manager [0-9\.]*$
           #content-pattern: /^API Manager$/
