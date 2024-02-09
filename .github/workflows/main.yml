@@ -1,10 +1,10 @@
-name: Monitor new Git versions
+name: Monitor mulesoft releases
 
 on:
   workflow_dispatch:
 
 jobs:
-  gke-release:
+  mule-release:
     runs-on: ubuntu-latest
     steps:
       - uses: git-for-windows/rss-to-issues@v0.0.5
@@ -16,4 +16,4 @@ jobs:
           dry-run: false
           max-age: 48h
           labels: release
-          title-pattern: API Manager
+          title-pattern: /^API Manager$/
