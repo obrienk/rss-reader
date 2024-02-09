@@ -16,5 +16,5 @@ jobs:
           dry-run: true
           max-age: 72h
           labels: release
-          title-pattern: /^MuleSoft Release Notes$/
+          title-pattern: ^(?!.*API Manager)
           #content-pattern: /^API Manager$/
