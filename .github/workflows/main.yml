@@ -15,5 +15,5 @@ jobs:
           character-limit: 5000
           max-age: 7d
           labels: release
-          title-pattern: ^API Manager.*$
+          title-pattern: /API Manager\s+(.*)/gm
           #content-pattern: /^API Manager$/
