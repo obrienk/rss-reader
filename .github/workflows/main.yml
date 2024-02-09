@@ -16,5 +16,5 @@ jobs:
           dry-run: true
           max-age: 72h
           labels: release
-          title-pattern: ^(?!.*API Manager)
+          title-pattern: /API Manager.*/i
           #content-pattern: /^API Manager$/
