@@ -13,7 +13,7 @@ jobs:
           feed: https://docs.mulesoft.com/releases.rss
           prefix: "[API Manager release]"
           character-limit: 255
-          dry-run: false
+          dry-run: true
           max-age: 72h
           labels: release
           title-pattern: /^MuleSoft Release Notes$/
