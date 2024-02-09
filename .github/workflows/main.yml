@@ -17,4 +17,4 @@ jobs:
           max-age: 72h
           labels: release
           title-pattern: /^API Manager$/
-          #content-pattern: /^API Manager$/
+          content-pattern: /^API Manager$/
