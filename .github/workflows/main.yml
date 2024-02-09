@@ -13,7 +13,7 @@ jobs:
           feed: https://docs.mulesoft.com/releases.rss
           prefix: "[API Manager release]"
           character-limit: 5000
-          max-age: 7d
+          max-age: 3d
           labels: release
-          title-pattern: /^API Manager [0-9\.]*$/i
+          #title-pattern: /^API Manager [0-9\.]*$/i
           #content-pattern: /^API Manager$/
