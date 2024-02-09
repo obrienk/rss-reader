@@ -1,8 +1,11 @@
 name: Monitor mulesoft releases
 
 on:
+  schedule:
+    # Run this Action every day at 7:00am PST (15:00 UTC)
+    - cron: "00 15 * * *"
   workflow_dispatch:
-
+  
 jobs:
   mule-release:
     runs-on: ubuntu-latest
@@ -11,9 +14,8 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           feed: https://docs.mulesoft.com/releases.rss
-          prefix: "[API Manager release]"
+          prefix: "[Flex Gateway release]"
           character-limit: 5000
           max-age: 3d
           labels: release
-          title-pattern: ^.*API Manager [0-9\.]*$
-          #content-pattern: /^API Manager$/
+          title-pattern: ^.*Anypoint Flex Gateway [0-9\.]*$
